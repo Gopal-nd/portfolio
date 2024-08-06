@@ -20,14 +20,14 @@ export const EXPERIENCES = [
 role: "Defy-24 Hackathon",
 company: "Web 3",
 description: `Participated in a Web3 hackathon where we created a crowdfunding platform. Designed and developed user interfaces using Next.js and React. Collaborated with backend developers to integrate frontend components with Node.js APIs and smart contracts using Solidity and Hardhat. Focused on implementing responsive designs and optimizing frontend performance for a seamless user experience.`,
-technologies: ["React.js", "Node.js", "Hardhat", "Ethereum","Solidity","Next.js"],
+technologies: ["React.js", "Node.js", "Hardhat", "Ethereum","Solidity"],
   },
   {
     year: "2024 - February",
     role: "Hack To Future 2.0 Hackathon",
     company: "Web 3",
     description: `Won the Hack To Future 2.0 Hackathon by building a Web3 payments application. Developed the frontend using React.js and Next.js, and integrated with blockchain technology using Node.js, Solidity, and Hardhat to enable secure and efficient payments.`,
-    technologies: ["React.js", "Node.js", "Hardhat", "Solidity", "Ethereum","Next.js"],
+    technologies: ["React.js", "Node.js", "Hardhat", "Solidity", "Ethereum"],
   },
 
 ];
@@ -37,7 +37,7 @@ export const PROJECTS = [
     title: "Full Stack Blogging App",
     image: project1,
     description: "A full stack blogging app with features like CRUD operations, search functionality, and comments.",
-    technologies: ["HTML", "CSS", "React", "Next.js", "Prisma", "Next-Auth", "Postgres"],
+    technologies: [ "Next.js", "Prisma", "NextAuth", "Postgres"],
     Live: 'https://blog-wev2.vercel.app/',
     Git: 'https://github.com/Gopal-nd/blog'
   },
@@ -45,7 +45,7 @@ export const PROJECTS = [
     title: "Full Stack AI SAAS Application",
     image: project2,
     description: "A full stack AI SaaS application with features for managing tasks and projects. Includes AI-powered task creation, assignment, and progress tracking, with advanced data analytics to monitor and optimize workflows.",
-    technologies: ["HTML", "CSS", "MongoDB", "GeminAI", "React", "Next.js"],
+    technologies: ["Prisma", "GeminAI", "React", "Next.js"],
     Live: 'https://next-auth-self-sigma.vercel.app/',
     Git: 'https://github.com/Gopal-nd/next-auth/tree/main/ai-saas'
   },

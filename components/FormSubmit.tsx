@@ -42,7 +42,7 @@ export default function Formsubmit() {
     emailjs
       .send(
         "service_g7cm3nh",
-        "template_weylun7",
+        "template_lbs3eil",
         {
           from_name: form.name,
           to_name: "Goapl",
@@ -50,7 +50,7 @@ export default function Formsubmit() {
           to_email: "gopalhelpyou@gmail.com",
           message: form.message,
         },
-        "6AQLK2cX6JKyVgFdO"
+        "SE74VWI9OcrvPwCef"
       )
       .then(
         () => {
@@ -72,7 +72,7 @@ export default function Formsubmit() {
       );
   };
   return (
-    <div className="max-w-2xl mx-auto px-4">
+    <div className="max-w-2xl mx-auto px-4 mt-4">
       <div
           
       className=" space-y-4">

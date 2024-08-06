@@ -17,12 +17,12 @@ const Projects = () => {
       <div className='flex flex-col justify-center items-center gap-4'>
     
         {PROJECTS.map((proj,ind)=>(
-            <div key={ind} className='mb-8 flex flex-wrap lg:justify-center'>
+            <div key={ind} className='mb-8 px-4 flex flex-wrap lg:justify-center'>
                 <motion.div
                  whileInView={{opacity:1,x:0}}
                  initial={{opacity:0,x:-100}}
                  transition={{duration:1}}
-                className="w-full  lg:w-1/4">
+                className="w-full lg:w-1/4">
                   <Link href={proj.Live}>
                 <Image src={proj.image} alt={proj.title}  className='mb-6 p-4 w-[150] h-[150] lg:w-[200] lg:h-[200] rounded-xl' />
                   </Link>
@@ -36,7 +36,7 @@ const Projects = () => {
                     {proj.title}
                 </p>
                 <p className='mb-4 text-neutral-500'>{proj.description}</p>
-                <div className='flex gap-2'>
+                <div className='flex gap-2 flex-wrap'>
 
                 {
                     proj.technologies.map((tech,index)=>(

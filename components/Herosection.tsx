@@ -3,7 +3,8 @@ import {HERO_CONTENT} from '../constants'
 import Image from 'next/image'
 import profilePic from '../assets/gopal.jpeg'
 import {delay, motion} from 'framer-motion'
-
+import Link from 'next/link'
+import { DownloadIcon } from 'lucide-react'
 const container = (delay:string|any)=>({
     hidden:{x:-100,opacity:0},
     visible:{
@@ -39,7 +40,18 @@ const Herosection = () => {
                 initial='hidden'
                 animate='visible' className='my-2 max-w-xl py-6 px-4 text-muted-foreground '>
                     {HERO_CONTENT}
+                    
+                    
                 </motion.p>
+                <motion.div    variants={container(1.2)}
+                initial='hidden'
+                animate='visible' className=' max-w-xl py-2 gap-3 px-4 flex justify-center items-center '>
+                    
+                    
+                    <Link href={'/gopalnd.cv.pdf'} target='_blank'  className='px-4 py-2 font-medium text-black bg-white rounded-lg'>Get Resume</Link>
+                    <a href={'/gopalnd.cv.pdf'} download={'gopalnd.cv.pdf'} className='px-4 font-medium py-2 bg-white text-black rounded-lg'><DownloadIcon  size={24}/></a>
+                    
+                </motion.div>
             </div>
             </div>
             <div className="w-full lg:w-1/2 lg:p-8">
